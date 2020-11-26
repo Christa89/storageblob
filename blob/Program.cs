@@ -8,17 +8,17 @@ namespace blobprogram
 {
     class Program
     {
-        static string storageconnstring = "DefaultEndpointsProtocol=https;AccountName=demostore20900;AccountKey=TRT8g+H8XyIrW/Lfr+Gx1tyF77SL4Uxjw6C/KnFP67n4atBXZMhiqLzTfT1VvhsArNw3rH6vn2RCC13GEllRbg==;EndpointSuffix=core.windows.net";
-        static string containerName = "data";
+        static string storageconnstring = "DefaultEndpointsProtocol=https;AccountName=azurestoragetest089;AccountKey=hVpMsDGe2/wyys4JVg7mR+WRX5Tnyrtxj1NbXi6AmYmM7jRP5WLMACxmksTbV52eq5SX4JNxv7y0Njon5suuIw==;EndpointSuffix=core.windows.net";
+        static string containerName = "testdata";
         static string filename = "sample.txt";
         static string filepath="C:\\Work\\sample.txt";
         static string downloadpath = "C:\\Work\\sample.txt";
         static async Task Main(string[] args)
         {
-            //Container().Wait();
-            //CreateBlob().Wait();
+           // Container().Wait();
+            CreateBlob().Wait();
             //GetBlobs().Wait();
-            GetBlob().Wait();
+            //GetBlob().Wait();
             Console.WriteLine("Complete");
             Console.ReadKey();
         }
